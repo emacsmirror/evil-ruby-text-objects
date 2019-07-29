@@ -32,6 +32,12 @@
 (require 'evil)
 (require 'eieio)
 
+(declare-function ruby-beginning-of-block "ruby-mode.el")
+(declare-function ruby-end-of-block "ruby-mode.el")
+(declare-function enh-ruby-beginning-of-block "ext:enh-ruby-mode.el")
+(declare-function enh-ruby-end-of-block "ext:enh-ruby-mode.el")
+(declare-function enh-ruby-up-sexp "ext:enh-ruby-mode.el")
+
 ;; These classes abstract away the differences between ruby-mode and
 ;; enh-ruby-mode. They implement four methods: up, beginning, end, and
 ;; mark-special (to handle specific cases without resorting to the mode tools).
